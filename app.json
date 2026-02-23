@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "BeachDawgs",
+    "slug": "beachdawgs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "beachdawgs",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0ea5e9"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.beachdawgs",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "BeachDawgs uses your location to find nearby beaches and verify beach check-ins.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "BeachDawgs uses your location to find nearby beaches.",
+        "NSFaceIDUsageDescription": "Use Face ID to quickly and securely access BeachDawgs."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0ea5e9"
+      },
+      "package": "app.beachdawgs",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "BeachDawgs uses your location to find nearby beaches."
+        }
+      ],
+      "expo-notifications",
+      "expo-local-authentication"
+    ],
+    "sdkVersion": "54.0.0",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
