@@ -1,42 +1,42 @@
 export const colors = {
-  // Brand
-  primary: '#0ea5e9',     // sky-500
-  primaryDark: '#0284c7', // sky-600
-  primaryLight: '#bae6fd',// sky-200
+  // ── Brand ─────────────────────────────────────────────────────────────────
+  primary:      '#d59563',    // golden amber — echoes Google Maps night label colour
+  primaryDark:  '#c4834e',    // darker amber (pressed / focused state)
+  primaryLight: '#3d2a14',    // very dark warm tint (subtle highlight / active bg)
 
-  // Ratings
-  green: '#22c55e',
-  yellow: '#eab308',
-  red: '#ef4444',
+  // ── Condition ratings ─────────────────────────────────────────────────────
+  green:   '#22c55e',
+  yellow:  '#eab308',
+  red:     '#ef4444',
 
-  greenBg: '#f0fdf4',
-  yellowBg: '#fefce8',
-  redBg: '#fef2f2',
+  greenBg:  '#14532d',        // dark green surface
+  yellowBg: '#713f12',        // dark amber surface
+  redBg:    '#7f1d1d',        // dark red surface
 
-  // Neutrals
-  white: '#ffffff',
-  black: '#000000',
-  gray50: '#f9fafb',
-  gray100: '#f3f4f6',
-  gray200: '#e5e7eb',
-  gray300: '#d1d5db',
-  gray400: '#9ca3af',
-  gray500: '#6b7280',
-  gray600: '#4b5563',
-  gray700: '#374151',
-  gray800: '#1f2937',
-  gray900: '#111827',
+  // ── Neutrals (dark-first: gray50 = darkest bg, gray900 = brightest text) ──
+  white:   '#ffffff',         // true white — kept for text on coloured buttons etc.
+  black:   '#0a1520',         // deep navy-black — shadows
+  gray50:  '#0f1a26',         // page background (deepest)
+  gray100: '#172030',         // card / sheet surface
+  gray200: '#1f2d42',         // elevated surface / input background
+  gray300: '#28394f',         // borders, dividers, handle indicator
+  gray400: '#4a6070',         // disabled / very subtle text
+  gray500: '#6b8090',         // placeholder, tertiary text
+  gray600: '#8da0ae',         // secondary text
+  gray700: '#afc0cb',         // body text
+  gray800: '#d0dce6',         // secondary headings
+  gray900: '#e8f0f6',         // primary text (brightest)
 
-  // Ocean palette
-  ocean100: '#e0f2fe',
-  ocean500: '#0ea5e9',
-  ocean700: '#0369a1',
-  sand100: '#fef3c7',
-  sand400: '#fbbf24',
+  // ── Ocean / Sand (remapped to dark-map tones) ─────────────────────────────
+  ocean100: '#17263c',        // deep navy — map water colour
+  ocean500: '#1e3352',        // mid navy
+  ocean700: '#243d63',        // deep blue accent
+  sand100:  '#2a3548',        // dark warm surface (chip / tag bg)
+  sand400:  '#d59563',        // golden amber (same as primary)
 
-  // Transparent overlays
-  overlayLight: 'rgba(255,255,255,0.85)',
-  overlayDark: 'rgba(0,0,0,0.5)',
+  // ── Overlays ──────────────────────────────────────────────────────────────
+  overlayLight: 'rgba(255,255,255,0.06)',  // subtle shimmer on dark surfaces
+  overlayDark:  'rgba(0,0,0,0.65)',        // dark scrim
 } as const;
 
 export type ColorKey = keyof typeof colors;

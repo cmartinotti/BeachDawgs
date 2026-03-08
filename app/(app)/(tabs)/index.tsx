@@ -3,8 +3,10 @@
  *
  * Full-screen map with color-coded beach markers.
  * Beaches are loaded for the current viewport; zooming out past
- * MAX_VISIBLE_DELTA hides markers to avoid overloading the map.
- * Bottom sheet shows a sorted list of visible beaches.
+ * MAX_VISIBLE_DELTA shows a "zoom in" prompt instead.
+ *
+ * Tapping a marker → BeachConditionsOverlay pops up (current scores +
+ * mini sparkline forecasts, expandable to full-screen hourly chart).
  */
 
 import { useRef, useState, useMemo, useCallback, useEffect } from 'react';
@@ -17,6 +19,7 @@ import * as Location from 'expo-location';
 import { BeachMarker } from '@/components/map/BeachMarker';
 import { BeachPreviewCard } from '@/components/map/BeachPreviewCard';
 import { MapFiltersBar } from '@/components/map/MapFilters';
+import { BeachConditionsOverlay } from '@/components/map/BeachConditionsOverlay';
 import { useVisibleBeaches } from '@/hooks/useVisibleBeaches';
 import { useLocationStore } from '@/store/locationStore';
 import { useMapStore } from '@/store/mapStore';
@@ -31,13 +34,17 @@ export default function MapScreen() {
   const regionDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [region, setRegion] = useState<Region | null>(null);
+  // Snapshot of the selected beach — stored on press so the overlay never
+  // disappears when the map region shifts and `beaches` briefly reloads.
+  const [selectedBeachData, setSelectedBeachData] = useState<BeachWithConditions | null>(null);
 
   const { location, setLocation, setPermissionGranted } = useLocationStore();
   const { selectedBeachId, setSelectedBeach, filters, pendingFocusBeach, setPendingFocusBeach } = useMapStore();
 
   const { data: beaches = [], isLoading, tooZoomedOut } = useVisibleBeaches(region, filters);
 
-  const snapPoints = useMemo(() => ['15%', '45%', '85%'], []);
+  // Snap points — ~75% of the previous ['15%','45%','85%']
+  const snapPoints = useMemo(() => ['11%', '34%', '64%'], []);
 
   // Debounced region update — avoids hammering DB on every scroll frame
   const handleRegionChangeComplete = useCallback((newRegion: Region) => {
@@ -45,7 +52,7 @@ export default function MapScreen() {
     regionDebounceRef.current = setTimeout(() => setRegion(newRegion), 500);
   }, []);
 
-  // Request location on mount if not already granted
+  // Request location on mount
   useEffect(() => {
     (async () => {
       const { status } = await Location.getForegroundPermissionsAsync();
@@ -68,28 +75,43 @@ export default function MapScreen() {
     if (!pendingFocusBeach) return;
     setSelectedBeach(pendingFocusBeach.id);
     mapRef.current?.animateToRegion({
-      latitude: pendingFocusBeach.lat,
-      longitude: pendingFocusBeach.lng,
-      latitudeDelta: 0.05,
+      latitude:       pendingFocusBeach.lat - 0.05 * 0.28, // offset south → beach at top
+      longitude:      pendingFocusBeach.lng,
+      latitudeDelta:  0.05,
       longitudeDelta: 0.05,
     }, 800);
-    bottomSheetRef.current?.snapToIndex(1);
+    bottomSheetRef.current?.snapToIndex(0); // minimise sheet so overlay has room
     setPendingFocusBeach(null);
   }, [pendingFocusBeach]);
 
-  const handleMarkerPress = useCallback((beachId: string) => {
-    setSelectedBeach(beachId);
-    bottomSheetRef.current?.snapToIndex(1);
-  }, []);
+  const handleMarkerPress = useCallback((beach: BeachWithConditions) => {
+    setSelectedBeach(beach.id);
+    setSelectedBeachData(beach);             // snapshot — survives a data reload
+    bottomSheetRef.current?.snapToIndex(0); // minimise sheet; overlay takes over
+    // Shift the map so the beach pin sits in the upper-centre of the screen,
+    // clear of the overlay card that floats at the bottom.
+    // Keep current zoom; move centre 28% of latitudeDelta south of the beach
+    // → beach appears in the top ~30% of the viewport.
+    const delta = region ?? { latitudeDelta: 0.3, longitudeDelta: 0.3 };
+    mapRef.current?.animateToRegion({
+      latitude:       beach.lat - delta.latitudeDelta  * 0.28,
+      longitude:      beach.lng,
+      latitudeDelta:  delta.latitudeDelta,
+      longitudeDelta: delta.longitudeDelta,
+    }, 450);
+  }, [region]);
 
   const handleBeachPress = useCallback((beach: BeachWithConditions) => {
     router.push(`/beach/${beach.id}`);
   }, []);
 
-  const selectedBeach = useMemo(
-    () => beaches.find((b) => b.id === selectedBeachId) ?? null,
-    [beaches, selectedBeachId]
-  );
+  // Keep selectedBeachData fresh if conditions update in a subsequent load,
+  // but never clear it during loading (that would flicker the overlay away).
+  useEffect(() => {
+    if (!selectedBeachId) { setSelectedBeachData(null); return; }
+    const fresh = beaches.find((b) => b.id === selectedBeachId);
+    if (fresh) setSelectedBeachData(fresh);
+  }, [selectedBeachId, beaches]);
 
   const sheetTitle = tooZoomedOut
     ? 'Zoom in to see beaches'
@@ -106,7 +128,8 @@ export default function MapScreen() {
         initialRegion={AUSTRALIA_REGION}
         showsUserLocation
         showsMyLocationButton={false}
-        onPress={() => setSelectedBeach(null)}
+        customMapStyle={DARK_MAP_STYLE}
+        onPress={() => { setSelectedBeach(null); setSelectedBeachData(null); }}
         onRegionChangeComplete={handleRegionChangeComplete}
       >
         {beaches.map((beach) => (
@@ -114,7 +137,7 @@ export default function MapScreen() {
             key={beach.id}
             beach={beach}
             isSelected={beach.id === selectedBeachId}
-            onPress={() => handleMarkerPress(beach.id)}
+            onPress={() => handleMarkerPress(beach)}
           />
         ))}
       </MapView>
@@ -138,7 +161,15 @@ export default function MapScreen() {
         <Text style={styles.fabIcon}>📍</Text>
       </Pressable>
 
-      {/* Bottom sheet */}
+      {/* Beach conditions overlay — floats above bottom sheet when a beach is selected */}
+      {selectedBeachData && (
+        <BeachConditionsOverlay
+          beach={selectedBeachData}
+          onClose={() => { setSelectedBeach(null); setSelectedBeachData(null); }}
+        />
+      )}
+
+      {/* Bottom sheet — list of beaches in view */}
       <BottomSheet
         ref={bottomSheetRef}
         snapPoints={snapPoints}
@@ -149,13 +180,6 @@ export default function MapScreen() {
         <View style={styles.sheetHeader}>
           <Text style={styles.sheetTitle}>{sheetTitle}</Text>
         </View>
-
-        {selectedBeach && (
-          <BeachPreviewCard
-            beach={selectedBeach}
-            onPress={() => handleBeachPress(selectedBeach)}
-          />
-        )}
 
         {isLoading ? (
           <ActivityIndicator color={colors.primary} style={{ marginTop: spacing.xl }} />
@@ -180,6 +204,28 @@ export default function MapScreen() {
   );
 }
 
+// ─── Google Maps "Night" dark style ──────────────────────────────────────────
+const DARK_MAP_STYLE = [
+  { elementType: 'geometry',                    stylers: [{ color: '#242f3e' }] },
+  { elementType: 'labels.text.stroke',          stylers: [{ color: '#242f3e' }] },
+  { elementType: 'labels.text.fill',            stylers: [{ color: '#746855' }] },
+  { featureType: 'administrative.locality',     elementType: 'labels.text.fill',   stylers: [{ color: '#d59563' }] },
+  { featureType: 'poi',                         elementType: 'labels.text.fill',   stylers: [{ color: '#d59563' }] },
+  { featureType: 'poi.park',                    elementType: 'geometry',            stylers: [{ color: '#263c3f' }] },
+  { featureType: 'poi.park',                    elementType: 'labels.text.fill',   stylers: [{ color: '#6b9a76' }] },
+  { featureType: 'road',                        elementType: 'geometry',            stylers: [{ color: '#38414e' }] },
+  { featureType: 'road',                        elementType: 'geometry.stroke',     stylers: [{ color: '#212a37' }] },
+  { featureType: 'road',                        elementType: 'labels.text.fill',   stylers: [{ color: '#9ca5b3' }] },
+  { featureType: 'road.highway',               elementType: 'geometry',            stylers: [{ color: '#746855' }] },
+  { featureType: 'road.highway',               elementType: 'geometry.stroke',     stylers: [{ color: '#1f2835' }] },
+  { featureType: 'road.highway',               elementType: 'labels.text.fill',   stylers: [{ color: '#f3d19c' }] },
+  { featureType: 'transit',                     elementType: 'geometry',            stylers: [{ color: '#2f3948' }] },
+  { featureType: 'transit.station',            elementType: 'labels.text.fill',   stylers: [{ color: '#d59563' }] },
+  { featureType: 'water',                       elementType: 'geometry',            stylers: [{ color: '#17263c' }] },
+  { featureType: 'water',                       elementType: 'labels.text.fill',   stylers: [{ color: '#515c6d' }] },
+  { featureType: 'water',                       elementType: 'labels.text.stroke',  stylers: [{ color: '#17263c' }] },
+];
+
 const styles = StyleSheet.create({
   container: { flex: 1 },
   filtersContainer: {
@@ -196,7 +242,7 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray100,
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: colors.black,
@@ -207,7 +253,7 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   fabIcon: { fontSize: 22 },
-  sheetBackground: { backgroundColor: colors.white, borderRadius: 20 },
+  sheetBackground: { backgroundColor: colors.gray100, borderRadius: 20 },
   sheetHandle: { backgroundColor: colors.gray300 },
   sheetHeader: {
     paddingHorizontal: spacing.md,
@@ -218,7 +264,7 @@ const styles = StyleSheet.create({
   sheetTitle: { fontSize: 15, fontWeight: '600', color: colors.gray700 },
   zoomHint: {
     textAlign: 'center',
-    color: colors.gray400,
+    color: colors.gray600,
     marginTop: spacing.xl,
     fontSize: 14,
     paddingHorizontal: spacing.lg,

@@ -149,7 +149,7 @@ function formatBadgeId(id: string): string {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray50,
     padding: spacing.lg,
     paddingTop: 80,
     alignItems: 'center',

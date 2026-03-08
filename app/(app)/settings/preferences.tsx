@@ -111,7 +111,7 @@ export default function PreferencesScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
+  container: { flex: 1, backgroundColor: colors.gray50 },
   content: { paddingBottom: 80 },
   heading: { fontSize: 28, fontWeight: '700', color: colors.gray900, paddingHorizontal: spacing.md, paddingTop: 60, paddingBottom: spacing.md },
   section: { paddingHorizontal: spacing.md, marginBottom: spacing.xl },
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: spacing.sm,
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray100,
+    borderBottomColor: colors.gray300,
   },
   toggleLabel: { fontSize: 15, color: colors.gray800, flex: 1 },
 });

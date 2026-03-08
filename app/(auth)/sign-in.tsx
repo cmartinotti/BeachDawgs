@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     padding: spacing.lg,
     paddingTop: 80,
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray50,
     gap: spacing.md,
   },
   title: {

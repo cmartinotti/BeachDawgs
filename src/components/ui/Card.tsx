@@ -19,11 +19,11 @@ export function Card({ elevated = false, style, children, ...rest }: CardProps) 
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray100,
     borderRadius: radius.md,
     padding: spacing.md,
     borderWidth: 1,
-    borderColor: colors.gray200,
+    borderColor: colors.gray300,
   },
   elevated: {
     borderWidth: 0,

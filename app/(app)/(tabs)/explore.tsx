@@ -153,7 +153,7 @@ export default function ExploreScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white, paddingTop: 60 },
+  container: { flex: 1, backgroundColor: colors.gray50, paddingTop: 60 },
   header: { fontSize: 26, fontWeight: '700', color: colors.gray900, paddingHorizontal: spacing.md, marginBottom: spacing.md },
   searchInput: {
     marginHorizontal: spacing.md,
@@ -190,6 +190,6 @@ const styles = StyleSheet.create({
   beachInfo: { flex: 1, marginRight: spacing.md },
   beachName: { fontSize: 16, fontWeight: '600', color: colors.gray900 },
   beachMeta: { fontSize: 13, color: colors.gray500, marginTop: 2 },
-  separator: { height: 1, backgroundColor: colors.gray100, marginLeft: spacing.md },
+  separator: { height: 1, backgroundColor: colors.gray300, marginLeft: spacing.md },
   emptyText: { textAlign: 'center', color: colors.gray400, marginTop: spacing.xl, fontSize: 15 },
 });

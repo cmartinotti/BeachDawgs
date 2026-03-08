@@ -46,7 +46,7 @@ export default function OnboardingLocationScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray50,
     padding: spacing.lg,
     paddingTop: 100,
     alignItems: 'center',

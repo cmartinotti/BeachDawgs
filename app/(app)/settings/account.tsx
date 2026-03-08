@@ -105,7 +105,7 @@ export default function AccountScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
+  container: { flex: 1, backgroundColor: colors.gray50 },
   content: { paddingBottom: 60 },
   navBar: {
     flexDirection: 'row',
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     paddingTop: 55,
     paddingBottom: spacing.sm,
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray100,
+    borderBottomColor: colors.gray300,
   },
   backText: { fontSize: 17, color: colors.primary, fontWeight: '600' },
   navTitle: { fontSize: 17, fontWeight: '700', color: colors.gray900 },

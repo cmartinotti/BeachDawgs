@@ -213,18 +213,18 @@ export default function BeachDetailScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
+  container: { flex: 1, backgroundColor: colors.gray50 },
   loading: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   navBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray50,
     paddingHorizontal: spacing.md,
     paddingTop: 55,
     paddingBottom: spacing.sm,
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray100,
+    borderBottomColor: colors.gray300,
   },
   backButton: { padding: spacing.xs },
   backText: { fontSize: 17, color: colors.primary, fontWeight: '600' },

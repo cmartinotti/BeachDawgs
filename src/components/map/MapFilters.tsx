@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   scroll: { flexGrow: 0 },
   row: { gap: spacing.xs, paddingRight: spacing.sm },
   chip: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.gray200,
     borderRadius: radius.full,
     paddingHorizontal: spacing.md,
     paddingVertical: 7,

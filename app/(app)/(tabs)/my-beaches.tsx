@@ -83,7 +83,7 @@ export default function MyBeachesScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white, paddingTop: 60 },
+  container: { flex: 1, backgroundColor: colors.gray50, paddingTop: 60 },
   header: { fontSize: 26, fontWeight: '700', color: colors.gray900, paddingHorizontal: spacing.md, marginBottom: spacing.md },
   emptyState: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.lg, gap: spacing.md },
   emptyEmoji: { fontSize: 56 },
@@ -108,5 +108,5 @@ const styles = StyleSheet.create({
   beachName: { fontSize: 16, fontWeight: '600', color: colors.gray900 },
   beachMeta: { fontSize: 13, color: colors.gray500, marginTop: 2 },
   condsMeta: { fontSize: 13, color: colors.gray600, marginTop: 3 },
-  separator: { height: 1, backgroundColor: colors.gray100, marginLeft: spacing.md },
+  separator: { height: 1, backgroundColor: colors.gray300, marginLeft: spacing.md },
 });

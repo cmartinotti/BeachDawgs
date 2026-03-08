@@ -97,7 +97,7 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
+  container: { flex: 1, backgroundColor: colors.gray50 },
   content: { paddingBottom: 80 },
   header: { alignItems: 'center', paddingTop: 70, paddingHorizontal: spacing.lg, paddingBottom: spacing.lg },
   avatarContainer: { marginBottom: spacing.md },
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: spacing.md,
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray100,
+    borderBottomColor: colors.gray300,
   },
   settingsLabel: { fontSize: 15, color: colors.gray800 },
   chevron: { fontSize: 18, color: colors.gray400 },
