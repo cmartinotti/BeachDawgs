@@ -1,0 +1,1685 @@
+[
+  {
+    "osm_id": "node/7021524676",
+    "type": "node",
+    "name": "10 Mile Lagoon",
+    "lat": -33.8833658,
+    "lng": 121.7529069,
+    "osm_url": "https://www.openstreetmap.org/node/7021524676",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3439003836",
+    "type": "node",
+    "name": "Almonta Beach",
+    "lat": -34.6815427,
+    "lng": 135.3444322,
+    "osm_url": "https://www.openstreetmap.org/node/3439003836",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2452719314",
+    "type": "node",
+    "name": "Alva Beach",
+    "lat": -19.4546459,
+    "lng": 147.4830759,
+    "osm_url": "https://www.openstreetmap.org/node/2452719314",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828706029",
+    "type": "node",
+    "name": "Anzacs",
+    "lat": -38.5386324,
+    "lng": 145.3329776,
+    "osm_url": "https://www.openstreetmap.org/node/2828706029",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828706031",
+    "type": "node",
+    "name": "Aussie Track",
+    "lat": -38.5316441,
+    "lng": 145.324461,
+    "osm_url": "https://www.openstreetmap.org/node/2828706031",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1520189428",
+    "type": "node",
+    "name": "Back Beach",
+    "lat": -20.3360098,
+    "lng": 148.8527902,
+    "osm_url": "https://www.openstreetmap.org/node/1520189428",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4665554437",
+    "type": "node",
+    "name": "Back Beach",
+    "lat": -28.7942026,
+    "lng": 114.6111771,
+    "osm_url": "https://www.openstreetmap.org/node/4665554437",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10536240543",
+    "type": "node",
+    "name": "Back Beach",
+    "lat": -32.0798064,
+    "lng": 152.5440095,
+    "osm_url": "https://www.openstreetmap.org/node/10536240543",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6334509266",
+    "type": "node",
+    "name": "Banksia Beach",
+    "lat": -18.356412,
+    "lng": 146.3151836,
+    "osm_url": "https://www.openstreetmap.org/node/6334509266",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2283054193",
+    "type": "node",
+    "name": "Bargang",
+    "lat": -35.2281786,
+    "lng": 149.0640463,
+    "osm_url": "https://www.openstreetmap.org/node/2283054193",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1789975253",
+    "type": "node",
+    "name": "Betka Beach",
+    "lat": -37.5856032,
+    "lng": 149.738448,
+    "osm_url": "https://www.openstreetmap.org/node/1789975253",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12484778050",
+    "type": "node",
+    "name": "Bicton Baths",
+    "lat": -32.0283465,
+    "lng": 115.7776439,
+    "osm_url": "https://www.openstreetmap.org/node/12484778050",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2283054200",
+    "type": "node",
+    "name": "Bimbi Beach",
+    "lat": -35.2296437,
+    "lng": 149.074003,
+    "osm_url": "https://www.openstreetmap.org/node/2283054200",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/597971749",
+    "type": "node",
+    "name": "Binalong Bay",
+    "lat": -41.252011,
+    "lng": 148.304772,
+    "osm_url": "https://www.openstreetmap.org/node/597971749",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10294498109",
+    "type": "node",
+    "name": "Blinking Billy Beach",
+    "lat": -42.9155208,
+    "lng": 147.3600329,
+    "osm_url": "https://www.openstreetmap.org/node/10294498109",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13016046528",
+    "type": "node",
+    "name": "Blue Lake Beach",
+    "lat": -27.5942154,
+    "lng": 153.4763794,
+    "osm_url": "https://www.openstreetmap.org/node/13016046528",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1349114800",
+    "type": "node",
+    "name": "Boomer Beach",
+    "lat": -35.5361964,
+    "lng": 138.6732124,
+    "osm_url": "https://www.openstreetmap.org/node/1349114800",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7795802277",
+    "type": "node",
+    "name": "Boyfriend Beach",
+    "lat": -37.9538112,
+    "lng": 147.6642655,
+    "osm_url": "https://www.openstreetmap.org/node/7795802277",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3501004869",
+    "type": "node",
+    "name": "Broadwater Beach",
+    "lat": -29.0312984,
+    "lng": 153.4568309,
+    "osm_url": "https://www.openstreetmap.org/node/3501004869",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13465287652",
+    "type": "node",
+    "name": "Brodie's Beach",
+    "lat": -12.3454158,
+    "lng": 130.9284313,
+    "osm_url": "https://www.openstreetmap.org/node/13465287652",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704850",
+    "type": "node",
+    "name": "Brookes Beach",
+    "lat": -17.822566,
+    "lng": 146.1029736,
+    "osm_url": "https://www.openstreetmap.org/node/8353704850",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12787988074",
+    "type": "node",
+    "name": "Budgewoi Dog Beach",
+    "lat": -33.2411435,
+    "lng": 151.5682162,
+    "osm_url": "https://www.openstreetmap.org/node/12787988074",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4261020055",
+    "type": "node",
+    "name": "Butterfish Bay",
+    "lat": -35.2263184,
+    "lng": 137.0758505,
+    "osm_url": "https://www.openstreetmap.org/node/4261020055",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4603008669",
+    "type": "node",
+    "name": "Cabbots Beach",
+    "lat": -32.0220104,
+    "lng": 132.1935045,
+    "osm_url": "https://www.openstreetmap.org/node/4603008669",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7818394220",
+    "type": "node",
+    "name": "Caraar Beach",
+    "lat": -38.2041821,
+    "lng": 145.0565534,
+    "osm_url": "https://www.openstreetmap.org/node/7818394220",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637561",
+    "type": "node",
+    "name": "Casuarina Gardens",
+    "lat": -26.3849129,
+    "lng": 153.0872299,
+    "osm_url": "https://www.openstreetmap.org/node/765637561",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4986309749",
+    "type": "node",
+    "name": "Casuarina Nudist Beach",
+    "lat": -12.3490638,
+    "lng": 130.8768011,
+    "osm_url": "https://www.openstreetmap.org/node/4986309749",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9316547274",
+    "type": "node",
+    "name": "Cattle Point",
+    "lat": -23.4222337,
+    "lng": 150.8196765,
+    "osm_url": "https://www.openstreetmap.org/node/9316547274",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009334",
+    "type": "node",
+    "name": "Caves Beach",
+    "lat": -33.1104086,
+    "lng": 151.6477022,
+    "osm_url": "https://www.openstreetmap.org/node/12904009334",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11106067252",
+    "type": "node",
+    "name": "Caves Cove",
+    "lat": -20.1192439,
+    "lng": 148.8884529,
+    "osm_url": "https://www.openstreetmap.org/node/11106067252",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4599240932",
+    "type": "node",
+    "name": "Cheetima Beach",
+    "lat": -32.0118555,
+    "lng": 132.1725894,
+    "osm_url": "https://www.openstreetmap.org/node/4599240932",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/429406263",
+    "type": "node",
+    "name": "Cheviot Beach",
+    "lat": -38.3129732,
+    "lng": 144.6672586,
+    "osm_url": "https://www.openstreetmap.org/node/429406263",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6477170387",
+    "type": "node",
+    "name": "Clarks Beach",
+    "lat": -43.0736688,
+    "lng": 147.2692149,
+    "osm_url": "https://www.openstreetmap.org/node/6477170387",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6028667401",
+    "type": "node",
+    "name": "Cleveland Bay",
+    "lat": -19.2018057,
+    "lng": 146.7764773,
+    "osm_url": "https://www.openstreetmap.org/node/6028667401",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6191098639",
+    "type": "node",
+    "name": "Cockatoo Beach",
+    "lat": -20.2415021,
+    "lng": 148.8267143,
+    "osm_url": "https://www.openstreetmap.org/node/6191098639",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3006129688",
+    "type": "node",
+    "name": "Coconut Beach",
+    "lat": -17.953531,
+    "lng": 146.1562607,
+    "osm_url": "https://www.openstreetmap.org/node/3006129688",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7455696870",
+    "type": "node",
+    "name": "Coolum Beach",
+    "lat": -26.5317464,
+    "lng": 153.0928678,
+    "osm_url": "https://www.openstreetmap.org/node/7455696870",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12720746158",
+    "type": "node",
+    "name": "Copacabana Beach",
+    "lat": -33.4906971,
+    "lng": 151.4328373,
+    "osm_url": "https://www.openstreetmap.org/node/12720746158",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2053401222",
+    "type": "node",
+    "name": "Coral Bay",
+    "lat": -23.128363,
+    "lng": 113.769264,
+    "osm_url": "https://www.openstreetmap.org/node/2053401222",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10270776135",
+    "type": "node",
+    "name": "Corinella Beach",
+    "lat": -38.4080749,
+    "lng": 145.4216954,
+    "osm_url": "https://www.openstreetmap.org/node/10270776135",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/316592852",
+    "type": "node",
+    "name": "Cosy Corner (West)",
+    "lat": -35.0645103,
+    "lng": 117.6436923,
+    "osm_url": "https://www.openstreetmap.org/node/316592852",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4787355322",
+    "type": "node",
+    "name": "Cotters Beach",
+    "lat": -38.936972,
+    "lng": 146.2458137,
+    "osm_url": "https://www.openstreetmap.org/node/4787355322",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009333",
+    "type": "node",
+    "name": "Crabbs Beach",
+    "lat": -33.0967613,
+    "lng": 151.658336,
+    "osm_url": "https://www.openstreetmap.org/node/12904009333",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5311364380",
+    "type": "node",
+    "name": "Crocodile Beach",
+    "lat": -34.3777397,
+    "lng": 150.1210243,
+    "osm_url": "https://www.openstreetmap.org/node/5311364380",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1789975283",
+    "type": "node",
+    "name": "Davis Creek Beach",
+    "lat": -37.5798361,
+    "lng": 149.7473447,
+    "osm_url": "https://www.openstreetmap.org/node/1789975283",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12189761629",
+    "type": "node",
+    "name": "Disability beach",
+    "lat": -37.8917747,
+    "lng": 144.1666924,
+    "osm_url": "https://www.openstreetmap.org/node/12189761629",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7579464436",
+    "type": "node",
+    "name": "Discovery Beach",
+    "lat": -26.6022954,
+    "lng": 153.0984771,
+    "osm_url": "https://www.openstreetmap.org/node/7579464436",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13475480325",
+    "type": "node",
+    "name": "Dog Beach",
+    "lat": -27.4222095,
+    "lng": 153.0245933,
+    "osm_url": "https://www.openstreetmap.org/node/13475480325",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5572807268",
+    "type": "node",
+    "name": "Dolphin Point Beach",
+    "lat": -35.3978326,
+    "lng": 150.4484194,
+    "osm_url": "https://www.openstreetmap.org/node/5572807268",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3523579925",
+    "type": "node",
+    "name": "Dunbogan Beach",
+    "lat": -31.7160854,
+    "lng": 152.7944165,
+    "osm_url": "https://www.openstreetmap.org/node/3523579925",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7818394219",
+    "type": "node",
+    "name": "Earimil Beach",
+    "lat": -38.1799626,
+    "lng": 145.0743105,
+    "osm_url": "https://www.openstreetmap.org/node/7818394219",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13387852850",
+    "type": "node",
+    "name": "East Point Beach",
+    "lat": -12.4146195,
+    "lng": 130.8302818,
+    "osm_url": "https://www.openstreetmap.org/node/13387852850",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7795813532",
+    "type": "node",
+    "name": "Elbow Point",
+    "lat": -37.9550814,
+    "lng": 147.673235,
+    "osm_url": "https://www.openstreetmap.org/node/7795813532",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4258491831",
+    "type": "node",
+    "name": "Elle's Beach",
+    "lat": -23.4351797,
+    "lng": 113.7821615,
+    "osm_url": "https://www.openstreetmap.org/node/4258491831",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5142395508",
+    "type": "node",
+    "name": "Ellis Beach",
+    "lat": -16.7233804,
+    "lng": 145.6440518,
+    "osm_url": "https://www.openstreetmap.org/node/5142395508",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7327162231",
+    "type": "node",
+    "name": "Emerald Beach",
+    "lat": -30.1677249,
+    "lng": 153.190499,
+    "osm_url": "https://www.openstreetmap.org/node/7327162231",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7327162232",
+    "type": "node",
+    "name": "Fiddamans Beach",
+    "lat": -30.1605964,
+    "lng": 153.1966611,
+    "osm_url": "https://www.openstreetmap.org/node/7327162232",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2122458808",
+    "type": "node",
+    "name": "Florence Bay Beach",
+    "lat": -19.1220838,
+    "lng": 146.8779106,
+    "osm_url": "https://www.openstreetmap.org/node/2122458808",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/519642448",
+    "type": "node",
+    "name": "Flower Pot Beach",
+    "lat": -43.2006058,
+    "lng": 147.2572068,
+    "osm_url": "https://www.openstreetmap.org/node/519642448",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704851",
+    "type": "node",
+    "name": "Garners Beach",
+    "lat": -17.8112687,
+    "lng": 146.0994621,
+    "osm_url": "https://www.openstreetmap.org/node/8353704851",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/519647632",
+    "type": "node",
+    "name": "Gilhams Beach",
+    "lat": -43.5399124,
+    "lng": 146.8930031,
+    "osm_url": "https://www.openstreetmap.org/node/519647632",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13070173145",
+    "type": "node",
+    "name": "Grandfathers Beach",
+    "lat": -42.2265153,
+    "lng": 145.1928261,
+    "osm_url": "https://www.openstreetmap.org/node/13070173145",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9279013106",
+    "type": "node",
+    "name": "Granny's Pool",
+    "lat": -33.0838283,
+    "lng": 151.656727,
+    "osm_url": "https://www.openstreetmap.org/node/9279013106",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3439019405",
+    "type": "node",
+    "name": "Gunyah Beach",
+    "lat": -34.6915263,
+    "lng": 135.3893858,
+    "osm_url": "https://www.openstreetmap.org/node/3439019405",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5139091592",
+    "type": "node",
+    "name": "Guvvos Beach",
+    "lat": -38.4298533,
+    "lng": 144.1560409,
+    "osm_url": "https://www.openstreetmap.org/node/5139091592",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009335",
+    "type": "node",
+    "name": "Hams Beach",
+    "lat": -33.1031942,
+    "lng": 151.6518406,
+    "osm_url": "https://www.openstreetmap.org/node/12904009335",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10261897663",
+    "type": "node",
+    "name": "Heros Beach",
+    "lat": -32.6743291,
+    "lng": 152.0352296,
+    "osm_url": "https://www.openstreetmap.org/node/10261897663",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637575",
+    "type": "node",
+    "name": "Hidden Grove",
+    "lat": -26.3847855,
+    "lng": 153.0869027,
+    "osm_url": "https://www.openstreetmap.org/node/765637575",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11955943445",
+    "type": "node",
+    "name": "Hingston Beach",
+    "lat": -12.4942773,
+    "lng": 130.7707058,
+    "osm_url": "https://www.openstreetmap.org/node/11955943445",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/634784797",
+    "type": "node",
+    "name": "Horseshoe Bay",
+    "lat": -35.5329002,
+    "lng": 138.685478,
+    "osm_url": "https://www.openstreetmap.org/node/634784797",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12566724026",
+    "type": "node",
+    "name": "Ian Dipple Lagoon",
+    "lat": -27.9406564,
+    "lng": 153.4088684,
+    "osm_url": "https://www.openstreetmap.org/node/12566724026",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7795813534",
+    "type": "node",
+    "name": "James Point",
+    "lat": -37.9439274,
+    "lng": 147.6861422,
+    "osm_url": "https://www.openstreetmap.org/node/7795813534",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3361577571",
+    "type": "node",
+    "name": "Jolly Beach",
+    "lat": -35.26087,
+    "lng": 136.9663983,
+    "osm_url": "https://www.openstreetmap.org/node/3361577571",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1808393512",
+    "type": "node",
+    "name": "Kelleys Beach",
+    "lat": -37.14333,
+    "lng": 142.6125,
+    "osm_url": "https://www.openstreetmap.org/node/1808393512",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/519647642",
+    "type": "node",
+    "name": "Kent Beach",
+    "lat": -43.3128567,
+    "lng": 147.0388723,
+    "osm_url": "https://www.openstreetmap.org/node/519647642",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1345538189",
+    "type": "node",
+    "name": "Knights Beach",
+    "lat": -35.5364415,
+    "lng": 138.6782326,
+    "osm_url": "https://www.openstreetmap.org/node/1345538189",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3232379057",
+    "type": "node",
+    "name": "Koonya Beach",
+    "lat": -43.0601464,
+    "lng": 147.8139677,
+    "osm_url": "https://www.openstreetmap.org/node/3232379057",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11955943442",
+    "type": "node",
+    "name": "Kurumba Beach",
+    "lat": -12.4841118,
+    "lng": 130.7759731,
+    "osm_url": "https://www.openstreetmap.org/node/11955943442",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637573",
+    "type": "node",
+    "name": "Laguna Grove",
+    "lat": -26.3846534,
+    "lng": 153.0862187,
+    "osm_url": "https://www.openstreetmap.org/node/765637573",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4976901245",
+    "type": "node",
+    "name": "Lameroo Beach",
+    "lat": -12.4651927,
+    "lng": 130.8386362,
+    "osm_url": "https://www.openstreetmap.org/node/4976901245",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6179774334",
+    "type": "node",
+    "name": "Launs Beach",
+    "lat": -19.2623599,
+    "lng": 146.9886889,
+    "osm_url": "https://www.openstreetmap.org/node/6179774334",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10964420227",
+    "type": "node",
+    "name": "Legacy Beach",
+    "lat": -43.0820837,
+    "lng": 147.2940656,
+    "osm_url": "https://www.openstreetmap.org/node/10964420227",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13118741291",
+    "type": "node",
+    "name": "Lily’s Beach",
+    "lat": -28.1046734,
+    "lng": 153.4510219,
+    "osm_url": "https://www.openstreetmap.org/node/13118741291",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2311188533",
+    "type": "node",
+    "name": "Lionhead Beach",
+    "lat": -37.6637218,
+    "lng": 144.3528308,
+    "osm_url": "https://www.openstreetmap.org/node/2311188533",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3953346877",
+    "type": "node",
+    "name": "Little Pebbles",
+    "lat": -35.6034138,
+    "lng": 150.3339738,
+    "osm_url": "https://www.openstreetmap.org/node/3953346877",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904004014",
+    "type": "node",
+    "name": "Little Redhead Beach",
+    "lat": -33.0141143,
+    "lng": 151.7209687,
+    "osm_url": "https://www.openstreetmap.org/node/12904004014",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3444734996",
+    "type": "node",
+    "name": "Long Beach",
+    "lat": -34.627376,
+    "lng": 135.4505279,
+    "osm_url": "https://www.openstreetmap.org/node/3444734996",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12164891412",
+    "type": "node",
+    "name": "Lovers Beach",
+    "lat": -17.9534504,
+    "lng": 146.0909432,
+    "osm_url": "https://www.openstreetmap.org/node/12164891412",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12720855181",
+    "type": "node",
+    "name": "MacMasters Beach",
+    "lat": -33.5000272,
+    "lng": 151.4249022,
+    "osm_url": "https://www.openstreetmap.org/node/12720855181",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12779993266",
+    "type": "node",
+    "name": "Magenta Beach",
+    "lat": -33.313807,
+    "lng": 151.5270295,
+    "osm_url": "https://www.openstreetmap.org/node/12779993266",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828704498",
+    "type": "node",
+    "name": "Magiclands",
+    "lat": -38.5500891,
+    "lng": 145.3444166,
+    "osm_url": "https://www.openstreetmap.org/node/2828704498",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637563",
+    "type": "node",
+    "name": "Maison la Plage Grove",
+    "lat": -26.3852253,
+    "lng": 153.0877905,
+    "osm_url": "https://www.openstreetmap.org/node/765637563",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828718762",
+    "type": "node",
+    "name": "Mannings Launch",
+    "lat": -38.5273636,
+    "lng": 145.3428073,
+    "osm_url": "https://www.openstreetmap.org/node/2828718762",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4546516089",
+    "type": "node",
+    "name": "Mauritius Beach",
+    "lat": -21.808899,
+    "lng": 114.0953169,
+    "osm_url": "https://www.openstreetmap.org/node/4546516089",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2385091397",
+    "type": "node",
+    "name": "Mckinlay's Point",
+    "lat": -28.3924017,
+    "lng": 139.288273,
+    "osm_url": "https://www.openstreetmap.org/node/2385091397",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13061074397",
+    "type": "node",
+    "name": "Meelup Beach",
+    "lat": -33.5737618,
+    "lng": 115.0873771,
+    "osm_url": "https://www.openstreetmap.org/node/13061074397",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3918066515",
+    "type": "node",
+    "name": "Mexican Hat Beach",
+    "lat": -32.0164192,
+    "lng": 132.34098,
+    "osm_url": "https://www.openstreetmap.org/node/3918066515",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2053401238",
+    "type": "node",
+    "name": "Miaboolya Beach",
+    "lat": -24.799826,
+    "lng": 113.631592,
+    "osm_url": "https://www.openstreetmap.org/node/2053401238",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11955937002",
+    "type": "node",
+    "name": "Mica Beach",
+    "lat": -12.4800698,
+    "lng": 130.7764798,
+    "osm_url": "https://www.openstreetmap.org/node/11955937002",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2817431786",
+    "type": "node",
+    "name": "Millennium Esplande",
+    "lat": -23.9464175,
+    "lng": 151.3754287,
+    "osm_url": "https://www.openstreetmap.org/node/2817431786",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1791347364",
+    "type": "node",
+    "name": "Mindalong Beach",
+    "lat": -33.3589066,
+    "lng": 115.6174638,
+    "osm_url": "https://www.openstreetmap.org/node/1791347364",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704853",
+    "type": "node",
+    "name": "Mission Beach",
+    "lat": -17.8675326,
+    "lng": 146.1086747,
+    "osm_url": "https://www.openstreetmap.org/node/8353704853",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10964420226",
+    "type": "node",
+    "name": "Montgomery Beach",
+    "lat": -43.0749677,
+    "lng": 147.2742365,
+    "osm_url": "https://www.openstreetmap.org/node/10964420226",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3446754260",
+    "type": "node",
+    "name": "Morgans Landing",
+    "lat": -34.4974128,
+    "lng": 135.2195067,
+    "osm_url": "https://www.openstreetmap.org/node/3446754260",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2206249403",
+    "type": "node",
+    "name": "Mosman Beach",
+    "lat": -32.0205174,
+    "lng": 115.7510746,
+    "osm_url": "https://www.openstreetmap.org/node/2206249403",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3006138878",
+    "type": "node",
+    "name": "Muggy Muggy Beach",
+    "lat": -17.9298441,
+    "lng": 146.1435153,
+    "osm_url": "https://www.openstreetmap.org/node/3006138878",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2053401242",
+    "type": "node",
+    "name": "Nanga Bay WA",
+    "lat": -26.54431,
+    "lng": 113.854065,
+    "osm_url": "https://www.openstreetmap.org/node/2053401242",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704852",
+    "type": "node",
+    "name": "Narragon Beach",
+    "lat": -17.847978,
+    "lng": 146.1052362,
+    "osm_url": "https://www.openstreetmap.org/node/8353704852",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2311188534",
+    "type": "node",
+    "name": "Needles Beach",
+    "lat": -37.6625201,
+    "lng": 144.3500329,
+    "osm_url": "https://www.openstreetmap.org/node/2311188534",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2282697396",
+    "type": "node",
+    "name": "Nengi Bamir",
+    "lat": -35.2254614,
+    "lng": 149.0696653,
+    "osm_url": "https://www.openstreetmap.org/node/2282697396",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828706030",
+    "type": "node",
+    "name": "No Dogs",
+    "lat": -38.5341619,
+    "lng": 145.3274866,
+    "osm_url": "https://www.openstreetmap.org/node/2828706030",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6334509143",
+    "type": "node",
+    "name": "North Sheperd Beach",
+    "lat": -18.2108751,
+    "lng": 146.2295339,
+    "osm_url": "https://www.openstreetmap.org/node/6334509143",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3232399020",
+    "type": "node",
+    "name": "Okines Beach",
+    "lat": -42.8454154,
+    "lng": 147.6209713,
+    "osm_url": "https://www.openstreetmap.org/node/3232399020",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6028667402",
+    "type": "node",
+    "name": "Pallarenda Beach",
+    "lat": -19.1917723,
+    "lng": 146.7753563,
+    "osm_url": "https://www.openstreetmap.org/node/6028667402",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3006129689",
+    "type": "node",
+    "name": "Pallon Beach",
+    "lat": -17.938342,
+    "lng": 146.1390558,
+    "osm_url": "https://www.openstreetmap.org/node/3006129689",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13005272174",
+    "type": "node",
+    "name": "Pandanus Bay",
+    "lat": -20.3404878,
+    "lng": 148.8503779,
+    "osm_url": "https://www.openstreetmap.org/node/13005272174",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3232379054",
+    "type": "node",
+    "name": "Parker's Beach",
+    "lat": -43.0513349,
+    "lng": 147.7927031,
+    "osm_url": "https://www.openstreetmap.org/node/3232379054",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2385091400",
+    "type": "node",
+    "name": "PD's Beach",
+    "lat": -28.3901316,
+    "lng": 139.2562685,
+    "osm_url": "https://www.openstreetmap.org/node/2385091400",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6179774339",
+    "type": "node",
+    "name": "Pebble Beach",
+    "lat": -19.1857034,
+    "lng": 147.0169535,
+    "osm_url": "https://www.openstreetmap.org/node/6179774339",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1784658699",
+    "type": "node",
+    "name": "Pebbly Beach",
+    "lat": -37.6131918,
+    "lng": 149.7184887,
+    "osm_url": "https://www.openstreetmap.org/node/1784658699",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13387852851",
+    "type": "node",
+    "name": "Pee Wees Beach",
+    "lat": -12.4125332,
+    "lng": 130.8246924,
+    "osm_url": "https://www.openstreetmap.org/node/13387852851",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12630123187",
+    "type": "node",
+    "name": "Pelican Beach",
+    "lat": -26.3955072,
+    "lng": 153.0692842,
+    "osm_url": "https://www.openstreetmap.org/node/12630123187",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2385091401",
+    "type": "node",
+    "name": "Pelican Point",
+    "lat": -28.391045,
+    "lng": 139.2985065,
+    "osm_url": "https://www.openstreetmap.org/node/2385091401",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11377422618",
+    "type": "node",
+    "name": "Penrith Beach",
+    "lat": -33.6948214,
+    "lng": 150.6769369,
+    "osm_url": "https://www.openstreetmap.org/node/11377422618",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11955943443",
+    "type": "node",
+    "name": "Plater Beach",
+    "lat": -12.4854498,
+    "lng": 130.7757014,
+    "osm_url": "https://www.openstreetmap.org/node/11955943443",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5311364381",
+    "type": "node",
+    "name": "Platypus Beach",
+    "lat": -34.3719662,
+    "lng": 150.117663,
+    "osm_url": "https://www.openstreetmap.org/node/5311364381",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3745833195",
+    "type": "node",
+    "name": "Pococks Beach",
+    "lat": -12.2025739,
+    "lng": 132.2114401,
+    "osm_url": "https://www.openstreetmap.org/node/3745833195",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7795813533",
+    "type": "node",
+    "name": "Point Turner",
+    "lat": -37.9516444,
+    "lng": 147.6921725,
+    "osm_url": "https://www.openstreetmap.org/node/7795813533",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313420343",
+    "type": "node",
+    "name": "Princes Street",
+    "lat": -38.3503231,
+    "lng": 144.3017864,
+    "osm_url": "https://www.openstreetmap.org/node/9313420343",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10607569173",
+    "type": "node",
+    "name": "Princess Street (Steps/Boobs)",
+    "lat": -38.355683,
+    "lng": 144.2965155,
+    "osm_url": "https://www.openstreetmap.org/node/10607569173",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9316548439",
+    "type": "node",
+    "name": "Pumpkin Creek Beach",
+    "lat": -23.3473359,
+    "lng": 150.7917599,
+    "osm_url": "https://www.openstreetmap.org/node/9316548439",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313420890",
+    "type": "node",
+    "name": "Punchbowl",
+    "lat": -38.5370785,
+    "lng": 145.40948,
+    "osm_url": "https://www.openstreetmap.org/node/9313420890",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/172922500",
+    "type": "node",
+    "name": "Quarry Beach",
+    "lat": -37.6010281,
+    "lng": 149.7282765,
+    "osm_url": "https://www.openstreetmap.org/node/172922500",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313425958",
+    "type": "node",
+    "name": "Queenscliff - Pier Beach",
+    "lat": -38.267514,
+    "lng": 144.6664018,
+    "osm_url": "https://www.openstreetmap.org/node/9313425958",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3877570470",
+    "type": "node",
+    "name": "Quondolo Beach",
+    "lat": -36.9758885,
+    "lng": 149.9283521,
+    "osm_url": "https://www.openstreetmap.org/node/3877570470",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11928141806",
+    "type": "node",
+    "name": "RAAFs Beach",
+    "lat": -38.2790301,
+    "lng": 144.5026639,
+    "osm_url": "https://www.openstreetmap.org/node/11928141806",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313425981",
+    "type": "node",
+    "name": "Radfords",
+    "lat": -38.5699465,
+    "lng": 142.7963546,
+    "osm_url": "https://www.openstreetmap.org/node/9313425981",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4538870210",
+    "type": "node",
+    "name": "Red Beach",
+    "lat": -27.1001423,
+    "lng": 153.1706201,
+    "osm_url": "https://www.openstreetmap.org/node/4538870210",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313359638",
+    "type": "node",
+    "name": "Red River 1",
+    "lat": -37.7232084,
+    "lng": 149.5748137,
+    "osm_url": "https://www.openstreetmap.org/node/9313359638",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313359639",
+    "type": "node",
+    "name": "Red River 2",
+    "lat": -37.7260707,
+    "lng": 149.5586736,
+    "osm_url": "https://www.openstreetmap.org/node/9313359639",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313359640",
+    "type": "node",
+    "name": "Red River 3",
+    "lat": -37.727025,
+    "lng": 149.5548314,
+    "osm_url": "https://www.openstreetmap.org/node/9313359640",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313359641",
+    "type": "node",
+    "name": "Red River 4",
+    "lat": -37.72832,
+    "lng": 149.5480444,
+    "osm_url": "https://www.openstreetmap.org/node/9313359641",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904004015",
+    "type": "node",
+    "name": "Redhead Beach",
+    "lat": -33.0151922,
+    "lng": 151.7190038,
+    "osm_url": "https://www.openstreetmap.org/node/12904004015",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9313508733",
+    "type": "node",
+    "name": "Reef Point Beach",
+    "lat": -38.360586,
+    "lng": 142.2914389,
+    "osm_url": "https://www.openstreetmap.org/node/9313508733",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8509965474",
+    "type": "node",
+    "name": "Riverside Park Beach",
+    "lat": -29.0713238,
+    "lng": 153.3426633,
+    "osm_url": "https://www.openstreetmap.org/node/8509965474",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2330044185",
+    "type": "node",
+    "name": "Rokeby Beach",
+    "lat": -42.9096061,
+    "lng": 147.4337215,
+    "osm_url": "https://www.openstreetmap.org/node/2330044185",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6028667400",
+    "type": "node",
+    "name": "Rowes Bay",
+    "lat": -19.2196186,
+    "lng": 146.7812815,
+    "osm_url": "https://www.openstreetmap.org/node/6028667400",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4782905228",
+    "type": "node",
+    "name": "Rudd's Road Sandbar",
+    "lat": -34.422331,
+    "lng": 142.3626922,
+    "osm_url": "https://www.openstreetmap.org/node/4782905228",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1791659753",
+    "type": "node",
+    "name": "Sailors Grave Beach",
+    "lat": -37.8025312,
+    "lng": 148.7415794,
+    "osm_url": "https://www.openstreetmap.org/node/1791659753",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13401386758",
+    "type": "node",
+    "name": "Sand Tracks",
+    "lat": -32.0394269,
+    "lng": 115.7430149,
+    "osm_url": "https://www.openstreetmap.org/node/13401386758",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637562",
+    "type": "node",
+    "name": "Sandcastles Grove",
+    "lat": -26.3850475,
+    "lng": 153.0874901,
+    "osm_url": "https://www.openstreetmap.org/node/765637562",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13392156807",
+    "type": "node",
+    "name": "Sandpiper Beach",
+    "lat": -27.5995906,
+    "lng": 153.3528397,
+    "osm_url": "https://www.openstreetmap.org/node/13392156807",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7327162233",
+    "type": "node",
+    "name": "Sandy Beach",
+    "lat": -30.1510948,
+    "lng": 153.2001552,
+    "osm_url": "https://www.openstreetmap.org/node/7327162233",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/765637565",
+    "type": "node",
+    "name": "Seahaven Grove",
+    "lat": -26.3853334,
+    "lng": 153.0879836,
+    "osm_url": "https://www.openstreetmap.org/node/765637565",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1784658702",
+    "type": "node",
+    "name": "Secret Beach",
+    "lat": -37.6092983,
+    "lng": 149.7203136,
+    "osm_url": "https://www.openstreetmap.org/node/1784658702",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3446583441",
+    "type": "node",
+    "name": "Sensation Beach",
+    "lat": -34.5438164,
+    "lng": 135.2276796,
+    "osm_url": "https://www.openstreetmap.org/node/3446583441",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3446754261",
+    "type": "node",
+    "name": "Seven Mile Beach",
+    "lat": -34.5080953,
+    "lng": 135.2822499,
+    "osm_url": "https://www.openstreetmap.org/node/3446754261",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6028667407",
+    "type": "node",
+    "name": "Shelly Beach",
+    "lat": -19.1799768,
+    "lng": 146.7425321,
+    "osm_url": "https://www.openstreetmap.org/node/6028667407",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6028667405",
+    "type": "node",
+    "name": "Shelly Cove",
+    "lat": -19.1859305,
+    "lng": 146.7691621,
+    "osm_url": "https://www.openstreetmap.org/node/6028667405",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/11955943444",
+    "type": "node",
+    "name": "Silversands",
+    "lat": -12.4878028,
+    "lng": 130.7750912,
+    "osm_url": "https://www.openstreetmap.org/node/11955943444",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10239221876",
+    "type": "node",
+    "name": "Simmos Beach",
+    "lat": -33.9993684,
+    "lng": 150.9118339,
+    "osm_url": "https://www.openstreetmap.org/node/10239221876",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8900983513",
+    "type": "node",
+    "name": "Singing Beach",
+    "lat": -35.5773695,
+    "lng": 150.3582854,
+    "osm_url": "https://www.openstreetmap.org/node/8900983513",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/932819899",
+    "type": "node",
+    "name": "Slopen Beach",
+    "lat": -42.9900809,
+    "lng": 147.681581,
+    "osm_url": "https://www.openstreetmap.org/node/932819899",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5209587022",
+    "type": "node",
+    "name": "Sorrento Beach",
+    "lat": -31.8301497,
+    "lng": 115.7451081,
+    "osm_url": "https://www.openstreetmap.org/node/5209587022",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704855",
+    "type": "node",
+    "name": "South Mission Beach",
+    "lat": -17.9403328,
+    "lng": 146.0939819,
+    "osm_url": "https://www.openstreetmap.org/node/8353704855",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/6334509144",
+    "type": "node",
+    "name": "South Shepherd Beach",
+    "lat": -18.23029,
+    "lng": 146.2442875,
+    "osm_url": "https://www.openstreetmap.org/node/6334509144",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5511692679",
+    "type": "node",
+    "name": "South T-Bone Bay",
+    "lat": -22.0245297,
+    "lng": 113.918801,
+    "osm_url": "https://www.openstreetmap.org/node/5511692679",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4730092924",
+    "type": "node",
+    "name": "Southport Swimming Enclosure",
+    "lat": -27.9676857,
+    "lng": 153.4184354,
+    "osm_url": "https://www.openstreetmap.org/node/4730092924",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828718761",
+    "type": "node",
+    "name": "Speedies",
+    "lat": -38.5282909,
+    "lng": 145.343262,
+    "osm_url": "https://www.openstreetmap.org/node/2828718761",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/9878401847",
+    "type": "node",
+    "name": "St Kilda Beach",
+    "lat": -34.7385865,
+    "lng": 138.5333457,
+    "osm_url": "https://www.openstreetmap.org/node/9878401847",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4258491833",
+    "type": "node",
+    "name": "Stevens",
+    "lat": -23.454746,
+    "lng": 113.7809362,
+    "osm_url": "https://www.openstreetmap.org/node/4258491833",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009339",
+    "type": "node",
+    "name": "Stinky Point Beach",
+    "lat": -33.119305,
+    "lng": 151.6476116,
+    "osm_url": "https://www.openstreetmap.org/node/12904009339",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/7604490692",
+    "type": "node",
+    "name": "Sunset Beach",
+    "lat": -18.2392392,
+    "lng": 146.283461,
+    "osm_url": "https://www.openstreetmap.org/node/7604490692",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13339650849",
+    "type": "node",
+    "name": "Sunset Beach",
+    "lat": -12.424315,
+    "lng": 130.8340595,
+    "osm_url": "https://www.openstreetmap.org/node/13339650849",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009336",
+    "type": "node",
+    "name": "Swansea Heads Beach",
+    "lat": -33.0935717,
+    "lng": 151.6609953,
+    "osm_url": "https://www.openstreetmap.org/node/12904009336",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/12904009337",
+    "type": "node",
+    "name": "Swansea Wall Beach",
+    "lat": -33.0873521,
+    "lng": 151.6636813,
+    "osm_url": "https://www.openstreetmap.org/node/12904009337",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10567801313",
+    "type": "node",
+    "name": "Swimming and Kayak Launch",
+    "lat": -34.7412773,
+    "lng": 150.4716407,
+    "osm_url": "https://www.openstreetmap.org/node/10567801313",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828706032",
+    "type": "node",
+    "name": "The Colonnades",
+    "lat": -38.5297137,
+    "lng": 145.3221221,
+    "osm_url": "https://www.openstreetmap.org/node/2828706032",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/3232399018",
+    "type": "node",
+    "name": "Tiger Head Beach",
+    "lat": -42.8546183,
+    "lng": 147.6149203,
+    "osm_url": "https://www.openstreetmap.org/node/3232399018",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/5311364657",
+    "type": "node",
+    "name": "Tiny's Beach",
+    "lat": -34.3658475,
+    "lng": 150.1070908,
+    "osm_url": "https://www.openstreetmap.org/node/5311364657",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/1791347373",
+    "type": "node",
+    "name": "Warnbro Beach",
+    "lat": -32.3566915,
+    "lng": 115.7404025,
+    "osm_url": "https://www.openstreetmap.org/node/1791347373",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/4791128558",
+    "type": "node",
+    "name": "Waverley Lake Beach",
+    "lat": -41.4309968,
+    "lng": 147.1885618,
+    "osm_url": "https://www.openstreetmap.org/node/4791128558",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/13508359022",
+    "type": "node",
+    "name": "Windsurfer's Corner",
+    "lat": -12.3740181,
+    "lng": 130.8543213,
+    "osm_url": "https://www.openstreetmap.org/node/13508359022",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/8353704854",
+    "type": "node",
+    "name": "Wongaling Beach",
+    "lat": -17.9042956,
+    "lng": 146.0973966,
+    "osm_url": "https://www.openstreetmap.org/node/8353704854",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2828718760",
+    "type": "node",
+    "name": "Woolamai Back Beach",
+    "lat": -38.5339919,
+    "lng": 145.3406924,
+    "osm_url": "https://www.openstreetmap.org/node/2828718760",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/10897845022",
+    "type": "node",
+    "name": "Wungu Beach",
+    "lat": -16.9528097,
+    "lng": 145.9249722,
+    "osm_url": "https://www.openstreetmap.org/node/10897845022",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  },
+  {
+    "osm_id": "node/2283054203",
+    "type": "node",
+    "name": "Yerra Beach",
+    "lat": -35.2258962,
+    "lng": 149.0636281,
+    "osm_url": "https://www.openstreetmap.org/node/2283054203",
+    "reason": "Mapped as a single point in OSM — no polygon exists yet"
+  }
+]

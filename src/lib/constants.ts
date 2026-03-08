@@ -33,7 +33,7 @@ export const BADGE_IDS = {
 } as const;
 
 // ─── Location ─────────────────────────────────────────────────────────────────
-export const NEARBY_RADIUS_KM = 50;
+export const NEARBY_RADIUS_KM = 30;
 export const NEARBY_RADIUS_METRES = NEARBY_RADIUS_KM * 1000;
 
 // ─── Map ──────────────────────────────────────────────────────────────────────

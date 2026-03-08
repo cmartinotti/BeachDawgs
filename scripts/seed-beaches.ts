@@ -62,6 +62,10 @@ function parseCSV(content: string) {
         obj[h] = v === 'true';
       } else if (h === 'facilities') {
         try { obj[h] = JSON.parse(v); } catch { obj[h] = {}; }
+      } else if (h === 'boundary') {
+        obj[h] = v ? JSON.parse(v) : null;
+      } else if (h === 'state' && v === 'Unknown') {
+        obj[h] = null; // will be filtered out below
       } else {
         obj[h] = v;
       }
@@ -77,8 +81,9 @@ async function main() {
   }
 
   const content = fs.readFileSync(CSV_PATH, 'utf8');
-  const beaches = parseCSV(content);
-  console.log(`Parsed ${beaches.length} beaches from CSV`);
+  const allBeaches = parseCSV(content);
+  const beaches = allBeaches.filter((b) => b['state'] !== null && b['state'] !== 'Unknown' && b['state'] !== '');
+  console.log(`Parsed ${allBeaches.length} beaches from CSV, ${beaches.length} have a known state (${allBeaches.length - beaches.length} skipped).`);
 
   let inserted = 0;
   let skipped = 0;
@@ -88,7 +93,7 @@ async function main() {
 
     const { error } = await supabase
       .from('beaches')
-      .upsert(batch as any[], { onConflict: 'osm_id', ignoreDuplicates: true });
+      .upsert(batch as any[], { onConflict: 'osm_id' });
 
     if (error) {
       console.error(`Batch ${i}–${i + BATCH_SIZE} error:`, error.message);

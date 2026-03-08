@@ -215,9 +215,9 @@ async function evaluateBadgesAsync(
     if (overallRating === 'green') earn('golden_hour');
     // Storm chaser: checked in on a red day
     if (overallRating === 'red') earn('storm_chaser');
-    // Dawn patrol: before 7am local — simplified to UTC hour < 21 (approx AEST 7am)
+    // Dawn patrol: before 7am local — UTC 13:00-20:59 covers midnight-7am AEST/AEDT
     const hour = new Date().getUTCHours();
-    if (hour >= 20 || hour < 0) earn('dawn_patrol'); // Rough AEST/AEDT check
+    if (hour >= 13 && hour < 21) earn('dawn_patrol');
 
     if (newBadges.length > 0) {
       const allBadges = [...(profile.badges as any[]), ...newBadges];

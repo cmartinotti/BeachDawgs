@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npx create-expo-app@latest:*)",
+      "Bash(node:*)",
+      "Bash(npm --version)",
+      "Bash(npm install)",
+      "Bash(echo:*)",
+      "Bash(git -C \"D:/beachdawgs\" log --oneline -10)"
+    ]
+  }
+}

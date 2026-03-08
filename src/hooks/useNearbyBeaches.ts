@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/lib/supabase';
-import { boundingBox } from '@/lib/geo';
+import { boundingBox, haversineMetres } from '@/lib/geo';
 import { NEARBY_RADIUS_METRES } from '@/lib/constants';
 import type { LocationObject } from 'expo-location';
 import type { BeachWithConditions } from '@/types/beach';
@@ -52,21 +52,28 @@ export function useNearbyBeaches(location: LocationObject | null, filters: MapFi
       const { data, error } = await query;
       if (error) throw error;
 
-      // Normalize: pick the most current condition entry and attach as current_conditions
-      const beaches: BeachWithConditions[] = (data ?? []).map((beach: any) => {
-        const conditions: any[] = beach.beach_conditions ?? [];
-        // Pick the entry closest to now (most recently valid forecast)
-        const current = conditions
-          .filter((c) => c.forecast_time <= now)
-          .sort((a, b) => b.forecast_time.localeCompare(a.forecast_time))[0]
-          ?? conditions[0]
-          ?? null;
+      const userCoord = { lat: location.coords.latitude, lng: location.coords.longitude };
 
-        return {
-          ...beach,
-          current_conditions: current,
-        } as BeachWithConditions;
-      });
+      // Normalize: pick the most current condition entry and attach as current_conditions
+      const beaches: BeachWithConditions[] = (data ?? [])
+        // Precise circle filter — bounding box over-selects at corners
+        .filter((beach: any) =>
+          haversineMetres(userCoord, { lat: beach.lat, lng: beach.lng }) <= NEARBY_RADIUS_METRES
+        )
+        .map((beach: any) => {
+          const conditions: any[] = beach.beach_conditions ?? [];
+          // Pick the entry closest to now (most recently valid forecast)
+          const current = conditions
+            .filter((c) => c.forecast_time <= now)
+            .sort((a, b) => b.forecast_time.localeCompare(a.forecast_time))[0]
+            ?? conditions[0]
+            ?? null;
+
+          return {
+            ...beach,
+            current_conditions: current,
+          } as BeachWithConditions;
+        });
 
       // Filter by rating if set
       if (filters.minOverallRating) {

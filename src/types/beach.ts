@@ -11,6 +11,11 @@ export interface BeachFacilities {
   lifeguard?: boolean;
 }
 
+export interface GeoJsonPolygon {
+  type: 'Polygon';
+  coordinates: [number, number][][];
+}
+
 export interface Beach {
   id: string;
   osm_id: string | null;
@@ -30,6 +35,7 @@ export interface Beach {
   hub_beach_id: string | null;
   description: string | null;
   thumbnail_url: string | null;
+  boundary: GeoJsonPolygon | null;
   created_at: string;
 }
 

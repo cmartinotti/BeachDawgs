@@ -28,7 +28,7 @@ export default function MapScreen() {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   const { location, setLocation, setPermissionGranted } = useLocationStore();
-  const { selectedBeachId, setSelectedBeach, filters } = useMapStore();
+  const { selectedBeachId, setSelectedBeach, filters, pendingFocusBeach, setPendingFocusBeach } = useMapStore();
 
   const { data: beaches = [], isLoading } = useNearbyBeaches(location, filters);
 
@@ -51,6 +51,20 @@ export default function MapScreen() {
       }
     })();
   }, []);
+
+  // Navigate to a beach focused from the Explore screen
+  useEffect(() => {
+    if (!pendingFocusBeach) return;
+    setSelectedBeach(pendingFocusBeach.id);
+    mapRef.current?.animateToRegion({
+      latitude: pendingFocusBeach.lat,
+      longitude: pendingFocusBeach.lng,
+      latitudeDelta: 0.05,
+      longitudeDelta: 0.05,
+    }, 800);
+    bottomSheetRef.current?.snapToIndex(1);
+    setPendingFocusBeach(null);
+  }, [pendingFocusBeach]);
 
   const handleMarkerPress = useCallback((beachId: string) => {
     setSelectedBeach(beachId);

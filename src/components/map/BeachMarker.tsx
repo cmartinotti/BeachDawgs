@@ -32,11 +32,7 @@ export function BeachMarker({ beach, isSelected, onPress }: BeachMarkerProps) {
   const color = RATING_COLORS[overallRating];
   const coordinate = { latitude: beach.lat, longitude: beach.lng };
 
-  // Parse boundary from GeoJSON Polygon if available
-  const boundary = (beach as any).boundary as
-    { type: 'Polygon'; coordinates: [number, number][][] } | null | undefined;
-
-  const rawCoords = boundary?.type === 'Polygon' ? boundary.coordinates?.[0] : null;
+  const rawCoords = beach.boundary?.type === 'Polygon' ? beach.boundary.coordinates?.[0] : null;
   const polygonCoords = rawCoords && rawCoords.length >= 3
     ? rawCoords.map(([lng, lat]) => ({ latitude: lat, longitude: lng }))
     : null;

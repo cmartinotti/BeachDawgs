@@ -8,12 +8,20 @@ export interface MapFilters {
   patrolledOnly: boolean;
 }
 
+interface PendingFocusBeach {
+  id: string;
+  lat: number;
+  lng: number;
+}
+
 interface MapState {
   selectedBeachId: string | null;
   filters: MapFilters;
+  pendingFocusBeach: PendingFocusBeach | null;
   setSelectedBeach: (id: string | null) => void;
   setFilters: (filters: Partial<MapFilters>) => void;
   resetFilters: () => void;
+  setPendingFocusBeach: (beach: PendingFocusBeach | null) => void;
 }
 
 const DEFAULT_FILTERS: MapFilters = {
@@ -26,7 +34,9 @@ const DEFAULT_FILTERS: MapFilters = {
 export const useMapStore = create<MapState>((set) => ({
   selectedBeachId: null,
   filters: DEFAULT_FILTERS,
+  pendingFocusBeach: null,
   setSelectedBeach: (selectedBeachId) => set({ selectedBeachId }),
   setFilters: (partial) => set((state) => ({ filters: { ...state.filters, ...partial } })),
   resetFilters: () => set({ filters: DEFAULT_FILTERS }),
+  setPendingFocusBeach: (pendingFocusBeach) => set({ pendingFocusBeach }),
 }));
