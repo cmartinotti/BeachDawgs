@@ -2,10 +2,12 @@
  * BeachDawgs — Map Screen (main tab)
  *
  * Full-screen map with color-coded beach markers.
- * Bottom sheet shows a sorted list of nearby beaches.
+ * Beaches are loaded for the current viewport; zooming out past
+ * MAX_VISIBLE_DELTA hides markers to avoid overloading the map.
+ * Bottom sheet shows a sorted list of visible beaches.
  */
 
-import { useRef, useMemo, useCallback, useEffect } from 'react';
+import { useRef, useState, useMemo, useCallback, useEffect } from 'react';
 import { View, StyleSheet, Text, Pressable, ActivityIndicator } from 'react-native';
 import MapView, { Region, PROVIDER_GOOGLE } from 'react-native-maps';
 import BottomSheet, { BottomSheetFlatList } from '@gorhom/bottom-sheet';
@@ -15,7 +17,7 @@ import * as Location from 'expo-location';
 import { BeachMarker } from '@/components/map/BeachMarker';
 import { BeachPreviewCard } from '@/components/map/BeachPreviewCard';
 import { MapFiltersBar } from '@/components/map/MapFilters';
-import { useNearbyBeaches } from '@/hooks/useNearbyBeaches';
+import { useVisibleBeaches } from '@/hooks/useVisibleBeaches';
 import { useLocationStore } from '@/store/locationStore';
 import { useMapStore } from '@/store/mapStore';
 import { colors } from '@/styles/colors';
@@ -26,13 +28,22 @@ import type { BeachWithConditions } from '@/types/beach';
 export default function MapScreen() {
   const mapRef = useRef<MapView>(null);
   const bottomSheetRef = useRef<BottomSheet>(null);
+  const regionDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const [region, setRegion] = useState<Region | null>(null);
 
   const { location, setLocation, setPermissionGranted } = useLocationStore();
   const { selectedBeachId, setSelectedBeach, filters, pendingFocusBeach, setPendingFocusBeach } = useMapStore();
 
-  const { data: beaches = [], isLoading } = useNearbyBeaches(location, filters);
+  const { data: beaches = [], isLoading, tooZoomedOut } = useVisibleBeaches(region, filters);
 
   const snapPoints = useMemo(() => ['15%', '45%', '85%'], []);
+
+  // Debounced region update — avoids hammering DB on every scroll frame
+  const handleRegionChangeComplete = useCallback((newRegion: Region) => {
+    if (regionDebounceRef.current) clearTimeout(regionDebounceRef.current);
+    regionDebounceRef.current = setTimeout(() => setRegion(newRegion), 500);
+  }, []);
 
   // Request location on mount if not already granted
   useEffect(() => {
@@ -76,9 +87,15 @@ export default function MapScreen() {
   }, []);
 
   const selectedBeach = useMemo(
-    () => (beaches ?? []).find((b) => b.id === selectedBeachId) ?? null,
+    () => beaches.find((b) => b.id === selectedBeachId) ?? null,
     [beaches, selectedBeachId]
   );
+
+  const sheetTitle = tooZoomedOut
+    ? 'Zoom in to see beaches'
+    : isLoading
+    ? 'Finding beaches…'
+    : `${beaches.length} beach${beaches.length !== 1 ? 'es' : ''} in view`;
 
   return (
     <View style={styles.container}>
@@ -90,6 +107,7 @@ export default function MapScreen() {
         showsUserLocation
         showsMyLocationButton={false}
         onPress={() => setSelectedBeach(null)}
+        onRegionChangeComplete={handleRegionChangeComplete}
       >
         {beaches.map((beach) => (
           <BeachMarker
@@ -129,9 +147,7 @@ export default function MapScreen() {
         handleIndicatorStyle={styles.sheetHandle}
       >
         <View style={styles.sheetHeader}>
-          <Text style={styles.sheetTitle}>
-            {isLoading ? 'Finding beaches…' : `${(beaches ?? []).length} beaches nearby`}
-          </Text>
+          <Text style={styles.sheetTitle}>{sheetTitle}</Text>
         </View>
 
         {selectedBeach && (
@@ -143,6 +159,8 @@ export default function MapScreen() {
 
         {isLoading ? (
           <ActivityIndicator color={colors.primary} style={{ marginTop: spacing.xl }} />
+        ) : tooZoomedOut ? (
+          <Text style={styles.zoomHint}>Pan or zoom in on any coastline to load beaches</Text>
         ) : (
           <BottomSheetFlatList
             data={beaches}
@@ -198,4 +216,11 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.gray100,
   },
   sheetTitle: { fontSize: 15, fontWeight: '600', color: colors.gray700 },
+  zoomHint: {
+    textAlign: 'center',
+    color: colors.gray400,
+    marginTop: spacing.xl,
+    fontSize: 14,
+    paddingHorizontal: spacing.lg,
+  },
 });

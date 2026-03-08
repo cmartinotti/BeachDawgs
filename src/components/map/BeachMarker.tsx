@@ -9,6 +9,9 @@ interface BeachMarkerProps {
   onPress: () => void;
 }
 
+// Fixed dark orange for all polygon/circle overlays — high contrast on satellite & terrain
+const POLYGON_COLOR = '#D4600A';
+
 // Fallback circle radius in metres by beach type
 const FALLBACK_RADIUS: Record<string, number> = {
   surf_beach: 400,
@@ -40,12 +43,12 @@ export function BeachMarker({ beach, isSelected, onPress }: BeachMarkerProps) {
   return (
     <>
       {polygonCoords ? (
-        /* Accurate OSM polygon overlay */
+        /* Accurate OSM polygon overlay — dark orange for visibility */
         <Polygon
           coordinates={polygonCoords}
-          fillColor={hexToRgba(color, isSelected ? 0.40 : 0.25)}
-          strokeColor={hexToRgba(color, isSelected ? 0.95 : 0.65)}
-          strokeWidth={isSelected ? 2.5 : 1.5}
+          fillColor={hexToRgba(POLYGON_COLOR, isSelected ? 0.45 : 0.28)}
+          strokeColor={hexToRgba(POLYGON_COLOR, isSelected ? 1.0 : 0.75)}
+          strokeWidth={isSelected ? 3 : 2}
           tappable
           onPress={onPress}
           zIndex={isSelected ? 2 : 1}
@@ -58,9 +61,9 @@ export function BeachMarker({ beach, isSelected, onPress }: BeachMarkerProps) {
             (isSelected ? 1.2 : 1) *
             (FALLBACK_RADIUS[beach.beach_type ?? 'surf_beach'] ?? 300)
           }
-          fillColor={hexToRgba(color, isSelected ? 0.40 : 0.25)}
-          strokeColor={hexToRgba(color, isSelected ? 0.95 : 0.65)}
-          strokeWidth={isSelected ? 2.5 : 1.5}
+          fillColor={hexToRgba(POLYGON_COLOR, isSelected ? 0.45 : 0.28)}
+          strokeColor={hexToRgba(POLYGON_COLOR, isSelected ? 1.0 : 0.75)}
+          strokeWidth={isSelected ? 3 : 2}
           zIndex={isSelected ? 2 : 1}
         />
       )}
